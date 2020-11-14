@@ -257,7 +257,7 @@ export const Textarea = React.forwardRef(
           onKeyDown={handleKeyDown}
           onCompositionStart={handleCompositionStart}
           onCompositionEnd={handleCompositionEnd}
-          value={markdown}
+          defaultValue={markdown}
           onChange={handleTextChange}
           {...(scrollSync ? { onScroll: handleTextareaScroll } : {})}
         />
